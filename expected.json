@@ -1,0 +1,1926 @@
+[
+ {
+  "fn": "coverTruth",
+  "args": [
+   "2",
+   "24",
+   "7",
+   "40"
+  ],
+  "expected": "Keeping 2 posts staffed 24 hours a day, 7 days a week is 336 hours a week. At 40 hours a person that takes 9 people, with 24 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "1",
+   "1",
+   "1"
+  ],
+  "expected": "Keeping 1 post staffed 1 hour a day, 1 day a week is 1 hour a week. At 1 hour a person that takes 1 person, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "8",
+   "5",
+   "40"
+  ],
+  "expected": "Keeping 1 post staffed 8 hours a day, 5 days a week is 40 hours a week. At 40 hours a person that takes 1 person, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "8",
+   "5",
+   "8"
+  ],
+  "expected": "Keeping 1 post staffed 8 hours a day, 5 days a week is 40 hours a week. At 8 hours a person that takes 5 people, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "8",
+   "5",
+   "7"
+  ],
+  "expected": "Keeping 1 post staffed 8 hours a day, 5 days a week is 40 hours a week. At 7 hours a person that takes 6 people, with 2 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "3",
+   "12",
+   "7",
+   "36"
+  ],
+  "expected": "Keeping 3 posts staffed 12 hours a day, 7 days a week is 252 hours a week. At 36 hours a person that takes 7 people, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "50",
+   "24",
+   "7",
+   "1"
+  ],
+  "expected": "Keeping 50 posts staffed 24 hours a day, 7 days a week is 8400 hours a week. At 1 hour a person that takes 8400 people, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "50",
+   "24",
+   "7",
+   "80"
+  ],
+  "expected": "Keeping 50 posts staffed 24 hours a day, 7 days a week is 8400 hours a week. At 80 hours a person that takes 105 people, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "24",
+   "7",
+   "80"
+  ],
+  "expected": "Keeping 1 post staffed 24 hours a day, 7 days a week is 168 hours a week. At 80 hours a person that takes 3 people, with 72 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "2",
+   "24",
+   "7",
+   "41"
+  ],
+  "expected": "Keeping 2 posts staffed 24 hours a day, 7 days a week is 336 hours a week. At 41 hours a person that takes 9 people, with 33 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "8",
+   "5",
+   "80"
+  ],
+  "expected": "Keeping 1 post staffed 8 hours a day, 5 days a week is 40 hours a week. At 80 hours a person that takes 1 person, with 40 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "0",
+   "8",
+   "5",
+   "40"
+  ],
+  "expected": "ERR:the posts must be a whole number from 1 to 50"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "51",
+   "8",
+   "5",
+   "40"
+  ],
+  "expected": "ERR:the posts must be a whole number from 1 to 50"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "0",
+   "5",
+   "40"
+  ],
+  "expected": "ERR:the open hours per day must be a whole number from 1 to 24"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "25",
+   "5",
+   "40"
+  ],
+  "expected": "ERR:the open hours per day must be a whole number from 1 to 24"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "8",
+   "0",
+   "40"
+  ],
+  "expected": "ERR:the open days per week must be a whole number from 1 to 7"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "8",
+   "8",
+   "40"
+  ],
+  "expected": "ERR:the open days per week must be a whole number from 1 to 7"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "8",
+   "5",
+   "0"
+  ],
+  "expected": "ERR:the hours per person per week must be a whole number from 1 to 80"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "8",
+   "5",
+   "81"
+  ],
+  "expected": "ERR:the hours per person per week must be a whole number from 1 to 80"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "x",
+   "8",
+   "5",
+   "40"
+  ],
+  "expected": "ERR:the posts must be a whole number from 1 to 50"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "8",
+   "5",
+   ""
+  ],
+  "expected": "ERR:the hours per person per week must be a whole number from 1 to 80"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "8",
+   "5",
+   "4.5"
+  ],
+  "expected": "ERR:the hours per person per week must be a whole number from 1 to 80"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   " 2 ",
+   " 24 ",
+   " 7 ",
+   " 40 "
+  ],
+  "expected": "Keeping 2 posts staffed 24 hours a day, 7 days a week is 336 hours a week. At 40 hours a person that takes 9 people, with 24 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "-1",
+   "8",
+   "5",
+   "40"
+  ],
+  "expected": "ERR:the posts must be a whole number from 1 to 50"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "10000",
+   "8",
+   "5",
+   "40"
+  ],
+  "expected": "ERR:the posts must be a whole number from 1 to 50"
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "11",
+   "7",
+   "4",
+   "28"
+  ],
+  "expected": "Keeping 11 posts staffed 7 hours a day, 4 days a week is 308 hours a week. At 28 hours a person that takes 11 people, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "34",
+   "20",
+   "7",
+   "42"
+  ],
+  "expected": "Keeping 34 posts staffed 20 hours a day, 7 days a week is 4760 hours a week. At 42 hours a person that takes 114 people, with 28 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "20",
+   "7",
+   "71"
+  ],
+  "expected": "Keeping 1 post staffed 20 hours a day, 7 days a week is 140 hours a week. At 71 hours a person that takes 2 people, with 2 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "6",
+   "19",
+   "2",
+   "31"
+  ],
+  "expected": "Keeping 6 posts staffed 19 hours a day, 2 days a week is 228 hours a week. At 31 hours a person that takes 8 people, with 20 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "22",
+   "21",
+   "7",
+   "37"
+  ],
+  "expected": "Keeping 22 posts staffed 21 hours a day, 7 days a week is 3234 hours a week. At 37 hours a person that takes 88 people, with 22 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "12",
+   "20",
+   "5",
+   "38"
+  ],
+  "expected": "Keeping 12 posts staffed 20 hours a day, 5 days a week is 1200 hours a week. At 38 hours a person that takes 32 people, with 16 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "21",
+   "24",
+   "3",
+   "51"
+  ],
+  "expected": "Keeping 21 posts staffed 24 hours a day, 3 days a week is 1512 hours a week. At 51 hours a person that takes 30 people, with 18 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "16",
+   "3",
+   "5",
+   "12"
+  ],
+  "expected": "Keeping 16 posts staffed 3 hours a day, 5 days a week is 240 hours a week. At 12 hours a person that takes 20 people, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "4",
+   "12",
+   "5",
+   "52"
+  ],
+  "expected": "Keeping 4 posts staffed 12 hours a day, 5 days a week is 240 hours a week. At 52 hours a person that takes 5 people, with 20 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "48",
+   "22",
+   "5",
+   "5"
+  ],
+  "expected": "Keeping 48 posts staffed 22 hours a day, 5 days a week is 5280 hours a week. At 5 hours a person that takes 1056 people, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "28",
+   "2",
+   "4",
+   "77"
+  ],
+  "expected": "Keeping 28 posts staffed 2 hours a day, 4 days a week is 224 hours a week. At 77 hours a person that takes 3 people, with 7 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "6",
+   "6",
+   "5",
+   "56"
+  ],
+  "expected": "Keeping 6 posts staffed 6 hours a day, 5 days a week is 180 hours a week. At 56 hours a person that takes 4 people, with 44 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "7",
+   "13",
+   "1",
+   "54"
+  ],
+  "expected": "Keeping 7 posts staffed 13 hours a day, 1 day a week is 91 hours a week. At 54 hours a person that takes 2 people, with 17 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "27",
+   "23",
+   "7",
+   "28"
+  ],
+  "expected": "Keeping 27 posts staffed 23 hours a day, 7 days a week is 4347 hours a week. At 28 hours a person that takes 156 people, with 21 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "20",
+   "19",
+   "3",
+   "48"
+  ],
+  "expected": "Keeping 20 posts staffed 19 hours a day, 3 days a week is 1140 hours a week. At 48 hours a person that takes 24 people, with 12 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "37",
+   "2",
+   "6",
+   "39"
+  ],
+  "expected": "Keeping 37 posts staffed 2 hours a day, 6 days a week is 444 hours a week. At 39 hours a person that takes 12 people, with 24 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "42",
+   "16",
+   "4",
+   "21"
+  ],
+  "expected": "Keeping 42 posts staffed 16 hours a day, 4 days a week is 2688 hours a week. At 21 hours a person that takes 128 people, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "10",
+   "19",
+   "5",
+   "51"
+  ],
+  "expected": "Keeping 10 posts staffed 19 hours a day, 5 days a week is 950 hours a week. At 51 hours a person that takes 19 people, with 19 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "12",
+   "18",
+   "2",
+   "54"
+  ],
+  "expected": "Keeping 12 posts staffed 18 hours a day, 2 days a week is 432 hours a week. At 54 hours a person that takes 8 people, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "28",
+   "1",
+   "4",
+   "50"
+  ],
+  "expected": "Keeping 28 posts staffed 1 hour a day, 4 days a week is 112 hours a week. At 50 hours a person that takes 3 people, with 38 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "1",
+   "18",
+   "1",
+   "56"
+  ],
+  "expected": "Keeping 1 post staffed 18 hours a day, 1 day a week is 18 hours a week. At 56 hours a person that takes 1 person, with 38 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "42",
+   "9",
+   "6",
+   "25"
+  ],
+  "expected": "Keeping 42 posts staffed 9 hours a day, 6 days a week is 2268 hours a week. At 25 hours a person that takes 91 people, with 7 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "38",
+   "7",
+   "5",
+   "19"
+  ],
+  "expected": "Keeping 38 posts staffed 7 hours a day, 5 days a week is 1330 hours a week. At 19 hours a person that takes 70 people, with 0 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "43",
+   "21",
+   "1",
+   "10"
+  ],
+  "expected": "Keeping 43 posts staffed 21 hours a day, 1 day a week is 903 hours a week. At 10 hours a person that takes 91 people, with 7 spare hours across the team."
+ },
+ {
+  "fn": "coverTruth",
+  "args": [
+   "49",
+   "13",
+   "2",
+   "37"
+  ],
+  "expected": "Keeping 49 posts staffed 13 hours a day, 2 days a week is 1274 hours a week. At 37 hours a person that takes 35 people, with 21 spare hours across the team."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "1",
+   "1"
+  ],
+  "expected": "1 crew in blocks of 1 day covers every day, with no rest days."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "1",
+   "3"
+  ],
+  "expected": "1 crew in blocks of 3 days covers every day, with no rest days."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "1",
+   "7"
+  ],
+  "expected": "1 crew in blocks of 7 days covers every day, with no rest days."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "1",
+   "14"
+  ],
+  "expected": "1 crew in blocks of 14 days covers every day, with no rest days."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "2",
+   "1"
+  ],
+  "expected": "2 crews taking turns in blocks of 1 day: each crew works 1 day then rests 1 day, a cycle of 2 days. A crew averages 3.5 days on duty a week. The pattern lines up with the calendar week again after 14 days (2 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "2",
+   "3"
+  ],
+  "expected": "2 crews taking turns in blocks of 3 days: each crew works 3 days then rests 3 days, a cycle of 6 days. A crew averages 3.5 days on duty a week. The pattern lines up with the calendar week again after 42 days (6 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "2",
+   "7"
+  ],
+  "expected": "2 crews taking turns in blocks of 7 days: each crew works 7 days then rests 7 days, a cycle of 14 days. A crew averages 3.5 days on duty a week. The pattern lines up with the calendar week again after 14 days (2 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "2",
+   "14"
+  ],
+  "expected": "2 crews taking turns in blocks of 14 days: each crew works 14 days then rests 14 days, a cycle of 28 days. A crew averages 3.5 days on duty a week. The pattern lines up with the calendar week again after 28 days (4 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "3",
+   "1"
+  ],
+  "expected": "3 crews taking turns in blocks of 1 day: each crew works 1 day then rests 2 days, a cycle of 3 days. A crew averages 2.3 days on duty a week. The pattern lines up with the calendar week again after 21 days (3 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "3",
+   "3"
+  ],
+  "expected": "3 crews taking turns in blocks of 3 days: each crew works 3 days then rests 6 days, a cycle of 9 days. A crew averages 2.3 days on duty a week. The pattern lines up with the calendar week again after 63 days (9 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "3",
+   "7"
+  ],
+  "expected": "3 crews taking turns in blocks of 7 days: each crew works 7 days then rests 14 days, a cycle of 21 days. A crew averages 2.3 days on duty a week. The pattern lines up with the calendar week again after 21 days (3 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "3",
+   "14"
+  ],
+  "expected": "3 crews taking turns in blocks of 14 days: each crew works 14 days then rests 28 days, a cycle of 42 days. A crew averages 2.3 days on duty a week. The pattern lines up with the calendar week again after 42 days (6 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "4",
+   "1"
+  ],
+  "expected": "4 crews taking turns in blocks of 1 day: each crew works 1 day then rests 3 days, a cycle of 4 days. A crew averages 1.8 days on duty a week. The pattern lines up with the calendar week again after 28 days (4 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "4",
+   "3"
+  ],
+  "expected": "4 crews taking turns in blocks of 3 days: each crew works 3 days then rests 9 days, a cycle of 12 days. A crew averages 1.8 days on duty a week. The pattern lines up with the calendar week again after 84 days (12 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "4",
+   "7"
+  ],
+  "expected": "4 crews taking turns in blocks of 7 days: each crew works 7 days then rests 21 days, a cycle of 28 days. A crew averages 1.8 days on duty a week. The pattern lines up with the calendar week again after 28 days (4 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "4",
+   "14"
+  ],
+  "expected": "4 crews taking turns in blocks of 14 days: each crew works 14 days then rests 42 days, a cycle of 56 days. A crew averages 1.8 days on duty a week. The pattern lines up with the calendar week again after 56 days (8 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "5",
+   "1"
+  ],
+  "expected": "5 crews taking turns in blocks of 1 day: each crew works 1 day then rests 4 days, a cycle of 5 days. A crew averages 1.4 days on duty a week. The pattern lines up with the calendar week again after 35 days (5 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "5",
+   "3"
+  ],
+  "expected": "5 crews taking turns in blocks of 3 days: each crew works 3 days then rests 12 days, a cycle of 15 days. A crew averages 1.4 days on duty a week. The pattern lines up with the calendar week again after 105 days (15 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "5",
+   "7"
+  ],
+  "expected": "5 crews taking turns in blocks of 7 days: each crew works 7 days then rests 28 days, a cycle of 35 days. A crew averages 1.4 days on duty a week. The pattern lines up with the calendar week again after 35 days (5 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "5",
+   "14"
+  ],
+  "expected": "5 crews taking turns in blocks of 14 days: each crew works 14 days then rests 56 days, a cycle of 70 days. A crew averages 1.4 days on duty a week. The pattern lines up with the calendar week again after 70 days (10 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "6",
+   "1"
+  ],
+  "expected": "6 crews taking turns in blocks of 1 day: each crew works 1 day then rests 5 days, a cycle of 6 days. A crew averages 1.2 days on duty a week. The pattern lines up with the calendar week again after 42 days (6 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "6",
+   "3"
+  ],
+  "expected": "6 crews taking turns in blocks of 3 days: each crew works 3 days then rests 15 days, a cycle of 18 days. A crew averages 1.2 days on duty a week. The pattern lines up with the calendar week again after 126 days (18 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "6",
+   "7"
+  ],
+  "expected": "6 crews taking turns in blocks of 7 days: each crew works 7 days then rests 35 days, a cycle of 42 days. A crew averages 1.2 days on duty a week. The pattern lines up with the calendar week again after 42 days (6 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "6",
+   "14"
+  ],
+  "expected": "6 crews taking turns in blocks of 14 days: each crew works 14 days then rests 70 days, a cycle of 84 days. A crew averages 1.2 days on duty a week. The pattern lines up with the calendar week again after 84 days (12 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "7",
+   "1"
+  ],
+  "expected": "7 crews taking turns in blocks of 1 day: each crew works 1 day then rests 6 days, a cycle of 7 days. A crew averages 1 day on duty a week. The pattern lines up with the calendar week again after 7 days (1 week)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "7",
+   "3"
+  ],
+  "expected": "7 crews taking turns in blocks of 3 days: each crew works 3 days then rests 18 days, a cycle of 21 days. A crew averages 1 day on duty a week. The pattern lines up with the calendar week again after 21 days (3 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "7",
+   "7"
+  ],
+  "expected": "7 crews taking turns in blocks of 7 days: each crew works 7 days then rests 42 days, a cycle of 49 days. A crew averages 1 day on duty a week. The pattern lines up with the calendar week again after 49 days (7 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "7",
+   "14"
+  ],
+  "expected": "7 crews taking turns in blocks of 14 days: each crew works 14 days then rests 84 days, a cycle of 98 days. A crew averages 1 day on duty a week. The pattern lines up with the calendar week again after 98 days (14 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "8",
+   "1"
+  ],
+  "expected": "8 crews taking turns in blocks of 1 day: each crew works 1 day then rests 7 days, a cycle of 8 days. A crew averages 0.9 days on duty a week. The pattern lines up with the calendar week again after 56 days (8 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "8",
+   "3"
+  ],
+  "expected": "8 crews taking turns in blocks of 3 days: each crew works 3 days then rests 21 days, a cycle of 24 days. A crew averages 0.9 days on duty a week. The pattern lines up with the calendar week again after 168 days (24 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "8",
+   "7"
+  ],
+  "expected": "8 crews taking turns in blocks of 7 days: each crew works 7 days then rests 49 days, a cycle of 56 days. A crew averages 0.9 days on duty a week. The pattern lines up with the calendar week again after 56 days (8 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "8",
+   "14"
+  ],
+  "expected": "8 crews taking turns in blocks of 14 days: each crew works 14 days then rests 98 days, a cycle of 112 days. A crew averages 0.9 days on duty a week. The pattern lines up with the calendar week again after 112 days (16 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "9",
+   "1"
+  ],
+  "expected": "9 crews taking turns in blocks of 1 day: each crew works 1 day then rests 8 days, a cycle of 9 days. A crew averages 0.8 days on duty a week. The pattern lines up with the calendar week again after 63 days (9 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "9",
+   "3"
+  ],
+  "expected": "9 crews taking turns in blocks of 3 days: each crew works 3 days then rests 24 days, a cycle of 27 days. A crew averages 0.8 days on duty a week. The pattern lines up with the calendar week again after 189 days (27 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "9",
+   "7"
+  ],
+  "expected": "9 crews taking turns in blocks of 7 days: each crew works 7 days then rests 56 days, a cycle of 63 days. A crew averages 0.8 days on duty a week. The pattern lines up with the calendar week again after 63 days (9 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "9",
+   "14"
+  ],
+  "expected": "9 crews taking turns in blocks of 14 days: each crew works 14 days then rests 112 days, a cycle of 126 days. A crew averages 0.8 days on duty a week. The pattern lines up with the calendar week again after 126 days (18 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "10",
+   "1"
+  ],
+  "expected": "10 crews taking turns in blocks of 1 day: each crew works 1 day then rests 9 days, a cycle of 10 days. A crew averages 0.7 days on duty a week. The pattern lines up with the calendar week again after 70 days (10 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "10",
+   "3"
+  ],
+  "expected": "10 crews taking turns in blocks of 3 days: each crew works 3 days then rests 27 days, a cycle of 30 days. A crew averages 0.7 days on duty a week. The pattern lines up with the calendar week again after 210 days (30 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "10",
+   "7"
+  ],
+  "expected": "10 crews taking turns in blocks of 7 days: each crew works 7 days then rests 63 days, a cycle of 70 days. A crew averages 0.7 days on duty a week. The pattern lines up with the calendar week again after 70 days (10 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "10",
+   "14"
+  ],
+  "expected": "10 crews taking turns in blocks of 14 days: each crew works 14 days then rests 126 days, a cycle of 140 days. A crew averages 0.7 days on duty a week. The pattern lines up with the calendar week again after 140 days (20 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "11",
+   "1"
+  ],
+  "expected": "11 crews taking turns in blocks of 1 day: each crew works 1 day then rests 10 days, a cycle of 11 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 77 days (11 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "11",
+   "3"
+  ],
+  "expected": "11 crews taking turns in blocks of 3 days: each crew works 3 days then rests 30 days, a cycle of 33 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 231 days (33 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "11",
+   "7"
+  ],
+  "expected": "11 crews taking turns in blocks of 7 days: each crew works 7 days then rests 70 days, a cycle of 77 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 77 days (11 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "11",
+   "14"
+  ],
+  "expected": "11 crews taking turns in blocks of 14 days: each crew works 14 days then rests 140 days, a cycle of 154 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 154 days (22 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "12",
+   "1"
+  ],
+  "expected": "12 crews taking turns in blocks of 1 day: each crew works 1 day then rests 11 days, a cycle of 12 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 84 days (12 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "12",
+   "3"
+  ],
+  "expected": "12 crews taking turns in blocks of 3 days: each crew works 3 days then rests 33 days, a cycle of 36 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 252 days (36 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "12",
+   "7"
+  ],
+  "expected": "12 crews taking turns in blocks of 7 days: each crew works 7 days then rests 77 days, a cycle of 84 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 84 days (12 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "12",
+   "14"
+  ],
+  "expected": "12 crews taking turns in blocks of 14 days: each crew works 14 days then rests 154 days, a cycle of 168 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 168 days (24 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "13",
+   "1"
+  ],
+  "expected": "13 crews taking turns in blocks of 1 day: each crew works 1 day then rests 12 days, a cycle of 13 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 91 days (13 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "13",
+   "3"
+  ],
+  "expected": "13 crews taking turns in blocks of 3 days: each crew works 3 days then rests 36 days, a cycle of 39 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 273 days (39 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "13",
+   "7"
+  ],
+  "expected": "13 crews taking turns in blocks of 7 days: each crew works 7 days then rests 84 days, a cycle of 91 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 91 days (13 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "13",
+   "14"
+  ],
+  "expected": "13 crews taking turns in blocks of 14 days: each crew works 14 days then rests 168 days, a cycle of 182 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 182 days (26 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "14",
+   "1"
+  ],
+  "expected": "14 crews taking turns in blocks of 1 day: each crew works 1 day then rests 13 days, a cycle of 14 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 14 days (2 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "14",
+   "3"
+  ],
+  "expected": "14 crews taking turns in blocks of 3 days: each crew works 3 days then rests 39 days, a cycle of 42 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 42 days (6 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "14",
+   "7"
+  ],
+  "expected": "14 crews taking turns in blocks of 7 days: each crew works 7 days then rests 91 days, a cycle of 98 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 98 days (14 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "14",
+   "14"
+  ],
+  "expected": "14 crews taking turns in blocks of 14 days: each crew works 14 days then rests 182 days, a cycle of 196 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 196 days (28 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "15",
+   "1"
+  ],
+  "expected": "15 crews taking turns in blocks of 1 day: each crew works 1 day then rests 14 days, a cycle of 15 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 105 days (15 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "15",
+   "3"
+  ],
+  "expected": "15 crews taking turns in blocks of 3 days: each crew works 3 days then rests 42 days, a cycle of 45 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 315 days (45 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "15",
+   "7"
+  ],
+  "expected": "15 crews taking turns in blocks of 7 days: each crew works 7 days then rests 98 days, a cycle of 105 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 105 days (15 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "15",
+   "14"
+  ],
+  "expected": "15 crews taking turns in blocks of 14 days: each crew works 14 days then rests 196 days, a cycle of 210 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 210 days (30 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "16",
+   "1"
+  ],
+  "expected": "16 crews taking turns in blocks of 1 day: each crew works 1 day then rests 15 days, a cycle of 16 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 112 days (16 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "16",
+   "3"
+  ],
+  "expected": "16 crews taking turns in blocks of 3 days: each crew works 3 days then rests 45 days, a cycle of 48 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 336 days (48 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "16",
+   "7"
+  ],
+  "expected": "16 crews taking turns in blocks of 7 days: each crew works 7 days then rests 105 days, a cycle of 112 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 112 days (16 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "16",
+   "14"
+  ],
+  "expected": "16 crews taking turns in blocks of 14 days: each crew works 14 days then rests 210 days, a cycle of 224 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 224 days (32 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "17",
+   "1"
+  ],
+  "expected": "17 crews taking turns in blocks of 1 day: each crew works 1 day then rests 16 days, a cycle of 17 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 119 days (17 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "17",
+   "3"
+  ],
+  "expected": "17 crews taking turns in blocks of 3 days: each crew works 3 days then rests 48 days, a cycle of 51 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 357 days (51 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "17",
+   "7"
+  ],
+  "expected": "17 crews taking turns in blocks of 7 days: each crew works 7 days then rests 112 days, a cycle of 119 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 119 days (17 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "17",
+   "14"
+  ],
+  "expected": "17 crews taking turns in blocks of 14 days: each crew works 14 days then rests 224 days, a cycle of 238 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 238 days (34 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "18",
+   "1"
+  ],
+  "expected": "18 crews taking turns in blocks of 1 day: each crew works 1 day then rests 17 days, a cycle of 18 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 126 days (18 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "18",
+   "3"
+  ],
+  "expected": "18 crews taking turns in blocks of 3 days: each crew works 3 days then rests 51 days, a cycle of 54 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 378 days (54 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "18",
+   "7"
+  ],
+  "expected": "18 crews taking turns in blocks of 7 days: each crew works 7 days then rests 119 days, a cycle of 126 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 126 days (18 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "18",
+   "14"
+  ],
+  "expected": "18 crews taking turns in blocks of 14 days: each crew works 14 days then rests 238 days, a cycle of 252 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 252 days (36 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "19",
+   "1"
+  ],
+  "expected": "19 crews taking turns in blocks of 1 day: each crew works 1 day then rests 18 days, a cycle of 19 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 133 days (19 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "19",
+   "3"
+  ],
+  "expected": "19 crews taking turns in blocks of 3 days: each crew works 3 days then rests 54 days, a cycle of 57 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 399 days (57 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "19",
+   "7"
+  ],
+  "expected": "19 crews taking turns in blocks of 7 days: each crew works 7 days then rests 126 days, a cycle of 133 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 133 days (19 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "19",
+   "14"
+  ],
+  "expected": "19 crews taking turns in blocks of 14 days: each crew works 14 days then rests 252 days, a cycle of 266 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 266 days (38 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "20",
+   "1"
+  ],
+  "expected": "20 crews taking turns in blocks of 1 day: each crew works 1 day then rests 19 days, a cycle of 20 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 140 days (20 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "20",
+   "3"
+  ],
+  "expected": "20 crews taking turns in blocks of 3 days: each crew works 3 days then rests 57 days, a cycle of 60 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 420 days (60 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "20",
+   "7"
+  ],
+  "expected": "20 crews taking turns in blocks of 7 days: each crew works 7 days then rests 133 days, a cycle of 140 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 140 days (20 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "20",
+   "14"
+  ],
+  "expected": "20 crews taking turns in blocks of 14 days: each crew works 14 days then rests 266 days, a cycle of 280 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 280 days (40 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "0",
+   "4"
+  ],
+  "expected": "ERR:the crews must be a whole number from 1 to 20"
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "21",
+   "4"
+  ],
+  "expected": "ERR:the crews must be a whole number from 1 to 20"
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "3",
+   "0"
+  ],
+  "expected": "ERR:the block length must be a whole number from 1 to 14 days"
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "3",
+   "15"
+  ],
+  "expected": "ERR:the block length must be a whole number from 1 to 14 days"
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "x",
+   "4"
+  ],
+  "expected": "ERR:the crews must be a whole number from 1 to 20"
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "3",
+   ""
+  ],
+  "expected": "ERR:the block length must be a whole number from 1 to 14 days"
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "3",
+   "1.5"
+  ],
+  "expected": "ERR:the block length must be a whole number from 1 to 14 days"
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   " 3 ",
+   " 4 "
+  ],
+  "expected": "3 crews taking turns in blocks of 4 days: each crew works 4 days then rests 8 days, a cycle of 12 days. A crew averages 2.3 days on duty a week. The pattern lines up with the calendar week again after 84 days (12 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "13",
+   "7"
+  ],
+  "expected": "13 crews taking turns in blocks of 7 days: each crew works 7 days then rests 84 days, a cycle of 91 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 91 days (13 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "7",
+   "3"
+  ],
+  "expected": "7 crews taking turns in blocks of 3 days: each crew works 3 days then rests 18 days, a cycle of 21 days. A crew averages 1 day on duty a week. The pattern lines up with the calendar week again after 21 days (3 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "16",
+   "13"
+  ],
+  "expected": "16 crews taking turns in blocks of 13 days: each crew works 13 days then rests 195 days, a cycle of 208 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 1456 days (208 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "12",
+   "11"
+  ],
+  "expected": "12 crews taking turns in blocks of 11 days: each crew works 11 days then rests 121 days, a cycle of 132 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 924 days (132 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "1",
+   "1"
+  ],
+  "expected": "1 crew in blocks of 1 day covers every day, with no rest days."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "14",
+   "14"
+  ],
+  "expected": "14 crews taking turns in blocks of 14 days: each crew works 14 days then rests 182 days, a cycle of 196 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 196 days (28 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "20",
+   "7"
+  ],
+  "expected": "20 crews taking turns in blocks of 7 days: each crew works 7 days then rests 133 days, a cycle of 140 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 140 days (20 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "4",
+   "11"
+  ],
+  "expected": "4 crews taking turns in blocks of 11 days: each crew works 11 days then rests 33 days, a cycle of 44 days. A crew averages 1.8 days on duty a week. The pattern lines up with the calendar week again after 308 days (44 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "2",
+   "11"
+  ],
+  "expected": "2 crews taking turns in blocks of 11 days: each crew works 11 days then rests 11 days, a cycle of 22 days. A crew averages 3.5 days on duty a week. The pattern lines up with the calendar week again after 154 days (22 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "3",
+   "2"
+  ],
+  "expected": "3 crews taking turns in blocks of 2 days: each crew works 2 days then rests 4 days, a cycle of 6 days. A crew averages 2.3 days on duty a week. The pattern lines up with the calendar week again after 42 days (6 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "13",
+   "6"
+  ],
+  "expected": "13 crews taking turns in blocks of 6 days: each crew works 6 days then rests 72 days, a cycle of 78 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 546 days (78 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "6",
+   "8"
+  ],
+  "expected": "6 crews taking turns in blocks of 8 days: each crew works 8 days then rests 40 days, a cycle of 48 days. A crew averages 1.2 days on duty a week. The pattern lines up with the calendar week again after 336 days (48 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "12",
+   "7"
+  ],
+  "expected": "12 crews taking turns in blocks of 7 days: each crew works 7 days then rests 77 days, a cycle of 84 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 84 days (12 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "16",
+   "3"
+  ],
+  "expected": "16 crews taking turns in blocks of 3 days: each crew works 3 days then rests 45 days, a cycle of 48 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 336 days (48 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "18",
+   "1"
+  ],
+  "expected": "18 crews taking turns in blocks of 1 day: each crew works 1 day then rests 17 days, a cycle of 18 days. A crew averages 0.4 days on duty a week. The pattern lines up with the calendar week again after 126 days (18 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "8",
+   "7"
+  ],
+  "expected": "8 crews taking turns in blocks of 7 days: each crew works 7 days then rests 49 days, a cycle of 56 days. A crew averages 0.9 days on duty a week. The pattern lines up with the calendar week again after 56 days (8 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "14",
+   "11"
+  ],
+  "expected": "14 crews taking turns in blocks of 11 days: each crew works 11 days then rests 143 days, a cycle of 154 days. A crew averages 0.5 days on duty a week. The pattern lines up with the calendar week again after 154 days (22 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "5",
+   "14"
+  ],
+  "expected": "5 crews taking turns in blocks of 14 days: each crew works 14 days then rests 56 days, a cycle of 70 days. A crew averages 1.4 days on duty a week. The pattern lines up with the calendar week again after 70 days (10 weeks)."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "1",
+   "5"
+  ],
+  "expected": "1 crew in blocks of 5 days covers every day, with no rest days."
+ },
+ {
+  "fn": "rotTruth",
+  "args": [
+   "12",
+   "2"
+  ],
+  "expected": "12 crews taking turns in blocks of 2 days: each crew works 2 days then rests 22 days, a cycle of 24 days. A crew averages 0.6 days on duty a week. The pattern lines up with the calendar week again after 168 days (24 weeks)."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "20",
+   "230",
+   "25",
+   "15"
+  ],
+  "expected": "A team of 20 people, each taking 25 leave days out of 230 workdays, has 17.8 on duty on an average workday. To keep 15 on duty on an average workday takes 17 people. You have 20, which is 3 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "10",
+   "230",
+   "25",
+   "15"
+  ],
+  "expected": "A team of 10 people, each taking 25 leave days out of 230 workdays, has 8.9 on duty on an average workday. To keep 15 on duty on an average workday takes 17 people. You have 10, which is 7 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "17",
+   "230",
+   "25",
+   "15"
+  ],
+  "expected": "A team of 17 people, each taking 25 leave days out of 230 workdays, has 15.2 on duty on an average workday. To keep 15 on duty on an average workday takes 17 people. You have exactly that many."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "16",
+   "230",
+   "25",
+   "15"
+  ],
+  "expected": "A team of 16 people, each taking 25 leave days out of 230 workdays, has 14.3 on duty on an average workday. To keep 15 on duty on an average workday takes 17 people. You have 16, which is 1 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "1",
+   "1",
+   "0",
+   "1"
+  ],
+  "expected": "A team of 1 person, each taking 0 leave days out of 1 workday, has 1 on duty on an average workday. To keep 1 on duty on an average workday takes 1 person. You have exactly that many."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "1",
+   "2",
+   "1",
+   "1"
+  ],
+  "expected": "A team of 1 person, each taking 1 leave day out of 2 workdays, has 0.5 on duty on an average workday. To keep 1 on duty on an average workday takes 2 people. You have 1, which is 1 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "2",
+   "2",
+   "1",
+   "1"
+  ],
+  "expected": "A team of 2 people, each taking 1 leave day out of 2 workdays, has 1 on duty on an average workday. To keep 1 on duty on an average workday takes 2 people. You have exactly that many."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "1000",
+   "366",
+   "365",
+   "1000"
+  ],
+  "expected": "A team of 1000 people, each taking 365 leave days out of 366 workdays, has 2.7 on duty on an average workday. To keep 1000 on duty on an average workday takes 366000 people. You have 1000, which is 365000 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "1000",
+   "366",
+   "0",
+   "1000"
+  ],
+  "expected": "A team of 1000 people, each taking 0 leave days out of 366 workdays, has 1000 on duty on an average workday. To keep 1000 on duty on an average workday takes 1000 people. You have exactly that many."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "1000",
+   "366",
+   "0",
+   "1"
+  ],
+  "expected": "A team of 1000 people, each taking 0 leave days out of 366 workdays, has 1000 on duty on an average workday. To keep 1 on duty on an average workday takes 1 person. You have 1000, which is 999 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "1",
+   "366",
+   "365",
+   "1"
+  ],
+  "expected": "A team of 1 person, each taking 365 leave days out of 366 workdays, has 0 on duty on an average workday. To keep 1 on duty on an average workday takes 366 people. You have 1, which is 365 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "5",
+   "5",
+   "4",
+   "1"
+  ],
+  "expected": "A team of 5 people, each taking 4 leave days out of 5 workdays, has 1 on duty on an average workday. To keep 1 on duty on an average workday takes 5 people. You have exactly that many."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "5",
+   "10",
+   "3",
+   "4"
+  ],
+  "expected": "A team of 5 people, each taking 3 leave days out of 10 workdays, has 3.5 on duty on an average workday. To keep 4 on duty on an average workday takes 6 people. You have 5, which is 1 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "7",
+   "261",
+   "20",
+   "5"
+  ],
+  "expected": "A team of 7 people, each taking 20 leave days out of 261 workdays, has 6.5 on duty on an average workday. To keep 5 on duty on an average workday takes 6 people. You have 7, which is 1 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "0",
+   "230",
+   "25",
+   "15"
+  ],
+  "expected": "ERR:the people must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "1001",
+   "230",
+   "25",
+   "15"
+  ],
+  "expected": "ERR:the people must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "20",
+   "0",
+   "0",
+   "15"
+  ],
+  "expected": "ERR:the workdays per person must be a whole number from 1 to 366"
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "20",
+   "367",
+   "25",
+   "15"
+  ],
+  "expected": "ERR:the workdays per person must be a whole number from 1 to 366"
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "20",
+   "230",
+   "230",
+   "15"
+  ],
+  "expected": "ERR:the leave days must be a whole number from 0 to one less than the workdays"
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "20",
+   "230",
+   "229",
+   "15"
+  ],
+  "expected": "A team of 20 people, each taking 229 leave days out of 230 workdays, has 0.1 on duty on an average workday. To keep 15 on duty on an average workday takes 3450 people. You have 20, which is 3430 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "20",
+   "230",
+   "-1",
+   "15"
+  ],
+  "expected": "ERR:the leave days must be a whole number from 0 to one less than the workdays"
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "20",
+   "230",
+   "25",
+   "0"
+  ],
+  "expected": "ERR:the people to keep on duty must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "20",
+   "230",
+   "25",
+   "1001"
+  ],
+  "expected": "ERR:the people to keep on duty must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "x",
+   "230",
+   "25",
+   "15"
+  ],
+  "expected": "ERR:the people must be a whole number from 1 to 1000"
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "20",
+   "230",
+   "",
+   "15"
+  ],
+  "expected": "ERR:the leave days must be a whole number from 0 to one less than the workdays"
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   " 20 ",
+   " 230 ",
+   " 25 ",
+   " 15 "
+  ],
+  "expected": "A team of 20 people, each taking 25 leave days out of 230 workdays, has 17.8 on duty on an average workday. To keep 15 on duty on an average workday takes 17 people. You have 20, which is 3 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "218",
+   "344",
+   "69",
+   "141"
+  ],
+  "expected": "A team of 218 people, each taking 69 leave days out of 344 workdays, has 174.3 on duty on an average workday. To keep 141 on duty on an average workday takes 177 people. You have 218, which is 41 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "4",
+   "210",
+   "92",
+   "283"
+  ],
+  "expected": "A team of 4 people, each taking 92 leave days out of 210 workdays, has 2.2 on duty on an average workday. To keep 283 on duty on an average workday takes 504 people. You have 4, which is 500 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "253",
+   "276",
+   "159",
+   "240"
+  ],
+  "expected": "A team of 253 people, each taking 159 leave days out of 276 workdays, has 107.3 on duty on an average workday. To keep 240 on duty on an average workday takes 567 people. You have 253, which is 314 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "70",
+   "122",
+   "97",
+   "220"
+  ],
+  "expected": "A team of 70 people, each taking 97 leave days out of 122 workdays, has 14.3 on duty on an average workday. To keep 220 on duty on an average workday takes 1074 people. You have 70, which is 1004 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "81",
+   "325",
+   "128",
+   "92"
+  ],
+  "expected": "A team of 81 people, each taking 128 leave days out of 325 workdays, has 49.1 on duty on an average workday. To keep 92 on duty on an average workday takes 152 people. You have 81, which is 71 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "246",
+   "276",
+   "133",
+   "195"
+  ],
+  "expected": "A team of 246 people, each taking 133 leave days out of 276 workdays, has 127.5 on duty on an average workday. To keep 195 on duty on an average workday takes 377 people. You have 246, which is 131 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "152",
+   "102",
+   "12",
+   "260"
+  ],
+  "expected": "A team of 152 people, each taking 12 leave days out of 102 workdays, has 134.1 on duty on an average workday. To keep 260 on duty on an average workday takes 295 people. You have 152, which is 143 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "35",
+   "190",
+   "140",
+   "237"
+  ],
+  "expected": "A team of 35 people, each taking 140 leave days out of 190 workdays, has 9.2 on duty on an average workday. To keep 237 on duty on an average workday takes 901 people. You have 35, which is 866 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "121",
+   "71",
+   "49",
+   "124"
+  ],
+  "expected": "A team of 121 people, each taking 49 leave days out of 71 workdays, has 37.5 on duty on an average workday. To keep 124 on duty on an average workday takes 401 people. You have 121, which is 280 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "237",
+   "80",
+   "47",
+   "300"
+  ],
+  "expected": "A team of 237 people, each taking 47 leave days out of 80 workdays, has 97.8 on duty on an average workday. To keep 300 on duty on an average workday takes 728 people. You have 237, which is 491 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "152",
+   "225",
+   "178",
+   "50"
+  ],
+  "expected": "A team of 152 people, each taking 178 leave days out of 225 workdays, has 31.8 on duty on an average workday. To keep 50 on duty on an average workday takes 240 people. You have 152, which is 88 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "287",
+   "17",
+   "5",
+   "148"
+  ],
+  "expected": "A team of 287 people, each taking 5 leave days out of 17 workdays, has 202.6 on duty on an average workday. To keep 148 on duty on an average workday takes 210 people. You have 287, which is 77 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "39",
+   "346",
+   "268",
+   "258"
+  ],
+  "expected": "A team of 39 people, each taking 268 leave days out of 346 workdays, has 8.8 on duty on an average workday. To keep 258 on duty on an average workday takes 1145 people. You have 39, which is 1106 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "116",
+   "356",
+   "242",
+   "4"
+  ],
+  "expected": "A team of 116 people, each taking 242 leave days out of 356 workdays, has 37.1 on duty on an average workday. To keep 4 on duty on an average workday takes 13 people. You have 116, which is 103 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "214",
+   "184",
+   "21",
+   "191"
+  ],
+  "expected": "A team of 214 people, each taking 21 leave days out of 184 workdays, has 189.6 on duty on an average workday. To keep 191 on duty on an average workday takes 216 people. You have 214, which is 2 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "217",
+   "67",
+   "13",
+   "255"
+  ],
+  "expected": "A team of 217 people, each taking 13 leave days out of 67 workdays, has 174.9 on duty on an average workday. To keep 255 on duty on an average workday takes 317 people. You have 217, which is 100 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "17",
+   "80",
+   "42",
+   "289"
+  ],
+  "expected": "A team of 17 people, each taking 42 leave days out of 80 workdays, has 8.1 on duty on an average workday. To keep 289 on duty on an average workday takes 609 people. You have 17, which is 592 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "46",
+   "326",
+   "21",
+   "18"
+  ],
+  "expected": "A team of 46 people, each taking 21 leave days out of 326 workdays, has 43 on duty on an average workday. To keep 18 on duty on an average workday takes 20 people. You have 46, which is 26 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "252",
+   "200",
+   "151",
+   "1"
+  ],
+  "expected": "A team of 252 people, each taking 151 leave days out of 200 workdays, has 61.7 on duty on an average workday. To keep 1 on duty on an average workday takes 5 people. You have 252, which is 247 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "200",
+   "53",
+   "16",
+   "170"
+  ],
+  "expected": "A team of 200 people, each taking 16 leave days out of 53 workdays, has 139.6 on duty on an average workday. To keep 170 on duty on an average workday takes 244 people. You have 200, which is 44 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "210",
+   "317",
+   "114",
+   "110"
+  ],
+  "expected": "A team of 210 people, each taking 114 leave days out of 317 workdays, has 134.5 on duty on an average workday. To keep 110 on duty on an average workday takes 172 people. You have 210, which is 38 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "254",
+   "68",
+   "1",
+   "93"
+  ],
+  "expected": "A team of 254 people, each taking 1 leave day out of 68 workdays, has 250.3 on duty on an average workday. To keep 93 on duty on an average workday takes 95 people. You have 254, which is 159 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "209",
+   "233",
+   "46",
+   "284"
+  ],
+  "expected": "A team of 209 people, each taking 46 leave days out of 233 workdays, has 167.7 on duty on an average workday. To keep 284 on duty on an average workday takes 354 people. You have 209, which is 145 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "52",
+   "165",
+   "85",
+   "163"
+  ],
+  "expected": "A team of 52 people, each taking 85 leave days out of 165 workdays, has 25.2 on duty on an average workday. To keep 163 on duty on an average workday takes 337 people. You have 52, which is 285 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "94",
+   "296",
+   "55",
+   "234"
+  ],
+  "expected": "A team of 94 people, each taking 55 leave days out of 296 workdays, has 76.5 on duty on an average workday. To keep 234 on duty on an average workday takes 288 people. You have 94, which is 194 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "73",
+   "339",
+   "338",
+   "252"
+  ],
+  "expected": "A team of 73 people, each taking 338 leave days out of 339 workdays, has 0.2 on duty on an average workday. To keep 252 on duty on an average workday takes 85428 people. You have 73, which is 85355 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "216",
+   "162",
+   "29",
+   "154"
+  ],
+  "expected": "A team of 216 people, each taking 29 leave days out of 162 workdays, has 177.3 on duty on an average workday. To keep 154 on duty on an average workday takes 188 people. You have 216, which is 28 more than that."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "63",
+   "11",
+   "6",
+   "37"
+  ],
+  "expected": "A team of 63 people, each taking 6 leave days out of 11 workdays, has 28.6 on duty on an average workday. To keep 37 on duty on an average workday takes 82 people. You have 63, which is 19 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "6",
+   "109",
+   "16",
+   "241"
+  ],
+  "expected": "A team of 6 people, each taking 16 leave days out of 109 workdays, has 5.1 on duty on an average workday. To keep 241 on duty on an average workday takes 283 people. You have 6, which is 277 short."
+ },
+ {
+  "fn": "leaveTruth",
+  "args": [
+   "249",
+   "223",
+   "49",
+   "181"
+  ],
+  "expected": "A team of 249 people, each taking 49 leave days out of 223 workdays, has 194.3 on duty on an average workday. To keep 181 on duty on an average workday takes 232 people. You have 249, which is 17 more than that."
+ }
+]
