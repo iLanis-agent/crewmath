@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crew Math - staffing and rota arithmetic</title>
+<style>
+  :root { --accent:#a85f00; --ink:#35210a; --paper:#fdf7ee; --soft:#f6e5cb; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#9a7545; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Crew Math</h1>
+  <p class="lede">Keeping 2 posts staffed 24 hours a day, 7 days a week is 336 hours a week, which takes 9 people at 40 hours each.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Crew Math adds up how many people a staffed post needs, how a rota lines up with the week and how leave thins a team, from the numbers you type. It does not know your labour rules, contracts, breaks, skills, sickness or who may work when, and it gives no verdict on whether any rota is legal, safe or fair. Every number is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: 2 posts open round the clock, 3 crews working 4 day blocks, and a team of 20 with 25 leave days each.</p>
+  <section>
+    <h2>The cover truth</h2>
+    <p>Keeping 2 posts staffed 24 hours a day, 7 days a week is 336 hours a week. At 40 hours a person that takes 9 people, with 24 spare hours across the team.</p>
+  </section>
+  <section>
+    <h2>The rota truth</h2>
+    <p>3 crews taking turns in blocks of 4 days: each crew works 4 days then rests 8 days, a cycle of 12 days. A crew averages 2.3 days on duty a week. The pattern lines up with the calendar week again after 84 days (12 weeks).</p>
+  </section>
+  <section>
+    <h2>The leave truth</h2>
+    <p>A team of 20 people, each taking 25 leave days out of 230 workdays, has 17.8 on duty on an average workday. To keep 15 on duty on an average workday takes 17 people. You have 20, which is 3 more than that.</p>
+  </section>
+  <a class="btn" href="app.html">Count your crew</a>
+  <footer>Crew Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
